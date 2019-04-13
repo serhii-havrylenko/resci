@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "plugin:jest/recommended",
+    "prettier/react"
+  ],
+  "plugins": ["flowtype", "jest", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "react/prop-types": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.story.js",
+          "**/*.test.jsx",
+          "**/*.story.jsx"
+        ]
+      }
+    ]
+  },
+  "env": {
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 9,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js", "*.test.jsx", "*.story.js", "*.story.jsx"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+}
