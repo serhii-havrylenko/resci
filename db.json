@@ -1,0 +1,23 @@
+{
+  "songs": [
+    {
+      "id": "id-1",
+      "title": "I, the Mask",
+      "author": "In Flames",
+      "duration": 3.41
+    },
+    {
+      "id": "id-2",
+      "title": "The End",
+      "author": "In Flames",
+      "duration": 3.58
+    },
+    {
+      "id": "id-2",
+      "title": "Like Sand",
+      "author": "In Flames",
+      "duration": 4.42
+    }
+  ],
+  "playlists": []
+}

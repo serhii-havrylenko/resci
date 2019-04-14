@@ -11,15 +11,16 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import DashboardIcon from '@material-ui/icons/Dashboard';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
+import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
+import PlaylistPlayIcon from '@material-ui/icons/PlaylistPlay';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import DonutSmall from '@material-ui/icons/DonutSmall';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import FlightTakeoff from '@material-ui/icons/FlightTakeoff';
+import DonutSmallIcon from '@material-ui/icons/DonutSmall';
+import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
+import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 import { inject, observer } from 'mobx-react';
 
 import { ROUTES } from '../../constants';
@@ -184,7 +185,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
               noWrap
               className={classes.title}
             >
-              <DonutSmall />
+              <DonutSmallIcon />
               ReSci spotify
             </Typography>
           </Toolbar>
@@ -201,7 +202,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
         >
           <div className={classes.toolbarIcon}>
             <Typography variant="h4">
-              <FlightTakeoff />
+              <FlightTakeoffIcon />
               Navigate
             </Typography>
             <IconButton onClick={this.handleDrawerClose}>
@@ -213,19 +214,19 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             {' '}
             <ListItem button onClick={this.navigateToSongs}>
               <ListItemIcon>
-                <DashboardIcon />
+                <LibraryMusicIcon />
               </ListItemIcon>
               <ListItemText primary="Songs" />
             </ListItem>
             <ListItem button onClick={this.navigateToPlaylists}>
               <ListItemIcon>
-                <DashboardIcon />
+                <PlaylistPlayIcon />
               </ListItemIcon>
               <ListItemText primary="Playlists" />
             </ListItem>
             <ListItem button onClick={this.navigateToFAQ}>
               <ListItemIcon>
-                <ShoppingCartIcon />
+                <QuestionAnswerIcon />
               </ListItemIcon>
               <ListItemText primary="FAQ" />
             </ListItem>

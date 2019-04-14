@@ -18,7 +18,8 @@
           "**/*.test.js",
           "**/*.story.js",
           "**/*.test.jsx",
-          "**/*.story.jsx"
+          "**/*.story.jsx",
+          "./config/**/*.js"
         ]
       }
     ]
