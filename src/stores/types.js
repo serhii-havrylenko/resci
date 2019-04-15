@@ -11,4 +11,5 @@ export interface IPlaylistsApi {
     id: $PropertyType<Playlist, 'id'>,
     body: Playlist,
   ): Promise<Response>;
+  addPlaylist(body: Playlist): Promise<Response>;
 }

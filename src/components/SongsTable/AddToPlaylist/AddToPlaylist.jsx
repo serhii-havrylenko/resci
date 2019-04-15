@@ -15,6 +15,7 @@ import { Link } from 'react-router-dom';
 import * as React from 'react';
 
 import type { Playlist, Song } from '../../../types';
+import { ROUTES } from '../../../constants';
 
 export type AddToPlaylistProps = {
   classes: Object,
@@ -55,6 +56,7 @@ class AddToPlaylist extends React.Component<
   };
 
   handleAddToNewPlaylist = (songId: $PropertyType<Song, 'id'>) => () => {
+    // TODO: implement auto adding to new playlist after creating
     console.log('add to new', songId);
     this.handleClose();
   };
@@ -112,7 +114,7 @@ class AddToPlaylist extends React.Component<
                     })}
                     {playlists.length && <Divider />}
                     <MenuItem>
-                      <Link to="/playlists/add" className={classes.link}>
+                      <Link to={ROUTES.PLAYLISTS_ADD} className={classes.link}>
                         <PlaylistAddCheckTwoTone /> new
                       </Link>
                     </MenuItem>

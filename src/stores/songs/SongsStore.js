@@ -1,9 +1,10 @@
 // @flow
 import { action, computed } from 'mobx';
 import { createTransformer } from 'mobx-utils';
+import { find, intersection, map, filter, includes } from 'lodash';
 
 import { SpotifyModel } from '../../models';
-import { type Song } from '../../types';
+import type { Playlist, Song } from '../../types';
 import { type ISongsApi } from '../types';
 
 export default class SongsStore {
@@ -27,6 +28,22 @@ export default class SongsStore {
 
     return this.model.playlists.filter(
       ({ songs }) => !songs.find(songId => id === songId),
+    );
+  });
+
+  songsByPlaylist = createTransformer((id: $PropertyType<Playlist, 'id'>) => {
+    const playlist = find(this.model.playlists, { id });
+    if (!playlist) {
+      return [];
+    }
+
+    const songIDs = intersection(
+      playlist.songs,
+      map(this.model.songs, ({ id: songId }) => songId),
+    );
+
+    return filter(this.model.songs, ({ id: songId }) =>
+      includes(songIDs, songId),
     );
   });
 

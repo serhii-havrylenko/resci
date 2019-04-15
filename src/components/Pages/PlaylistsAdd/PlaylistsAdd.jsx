@@ -1,8 +1,8 @@
 // @flow
 import { observer, inject } from 'mobx-react';
 import React from 'react';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import Dialog from '@material-ui/core/Dialog';
+
+import { PlaylistAddContainer } from '../../PlaylistAdd';
 
 type PlaylistsAddProps = {
   // eslint-disable-next-line react/require-default-props
@@ -22,16 +22,7 @@ class PlaylistsAdd extends React.Component<PlaylistsAddProps> {
   };
 
   render() {
-    return (
-      <Dialog
-        open
-        onClose={this.handleClose}
-        aria-labelledby="simple-dialog-title"
-      >
-        <DialogTitle id="simple-dialog-title">Set backup account</DialogTitle>
-        <div>Form will be here</div>
-      </Dialog>
-    );
+    return <PlaylistAddContainer onDialogClose={this.handleClose} />;
   }
 }
 

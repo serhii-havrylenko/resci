@@ -18,6 +18,15 @@ class PlaylistsApi implements IPlaylistsApi {
         body: JSON.stringify(body),
       },
     );
+
+  addPlaylist = (body: Playlist) =>
+    fetch(`${RESOURCES_URL}${RESOURCES.playlists.add}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    });
 }
 
 export default PlaylistsApi;

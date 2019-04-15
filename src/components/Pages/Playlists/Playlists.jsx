@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
 
-const Playlists = () => <div>Playlists will be here</div>;
+import { PlaylistsTableContainer } from '../../PlaylistsTable';
+
+const Playlists = () => <PlaylistsTableContainer />;
 
 export default Playlists;

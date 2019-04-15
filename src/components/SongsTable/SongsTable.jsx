@@ -15,9 +15,10 @@ import { type Song } from '../../types';
 type SongsTableProps = {
   classes: Object,
   songs: Song[],
+  hideActions?: boolean,
 };
 
-const SongsTable = ({ classes, songs }: SongsTableProps) => (
+const SongsTable = ({ classes, songs, hideActions }: SongsTableProps) => (
   <Paper className={classes.root}>
     <Table>
       <TableHead>
@@ -25,9 +26,11 @@ const SongsTable = ({ classes, songs }: SongsTableProps) => (
           <TableCellStyled align="left">Title</TableCellStyled>
           <TableCellStyled align="left">Author</TableCellStyled>
           <TableCellStyled align="left">Duratipn</TableCellStyled>
-          <TableCellStyled className={classes.actionsCell} align="center">
-            Actions
-          </TableCellStyled>
+          {!hideActions && (
+            <TableCellStyled className={classes.actionsCell} align="center">
+              Actions
+            </TableCellStyled>
+          )}
         </TableRow>
       </TableHead>
       <TableBody>
@@ -36,9 +39,11 @@ const SongsTable = ({ classes, songs }: SongsTableProps) => (
             <TableCellStyled align="left">{song.title}</TableCellStyled>
             <TableCellStyled align="left">{song.author}</TableCellStyled>
             <TableCellStyled align="left">{song.duration}</TableCellStyled>
-            <TableCellStyled align="center">
-              <AddToPlaylistContainer songId={song.id} />
-            </TableCellStyled>
+            {!hideActions && (
+              <TableCellStyled align="center">
+                <AddToPlaylistContainer songId={song.id} />
+              </TableCellStyled>
+            )}
           </TableRow>
         ))}
         {!songs.length && (
@@ -50,6 +55,10 @@ const SongsTable = ({ classes, songs }: SongsTableProps) => (
     </Table>
   </Paper>
 );
+
+SongsTable.defaultProps = {
+  hideActions: false,
+};
 
 export default withStyles(theme => ({
   root: {

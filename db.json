@@ -21,11 +21,18 @@
   ],
   "playlists": [
     {
-      "id": "p-1",
-      "name": "playlist 1",
+      "id": "PID-1",
+      "name": "123",
       "songs": [
-        "id-3",
-        "id-2"
+        "id-1",
+        "id-3"
+      ]
+    },
+    {
+      "id": "PID-2",
+      "name": "14324",
+      "songs": [
+        "id-1"
       ]
     }
   ]

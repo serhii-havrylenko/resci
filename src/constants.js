@@ -3,6 +3,7 @@
 export const ROUTES = {
   SONGS: '/songs',
   PLAYLISTS: '/playlists',
+  PLAYLISTS_DETAILS: '/playlists/:id',
   PLAYLISTS_ADD: '/playlists/add',
   FAQ: '/faq',
 };

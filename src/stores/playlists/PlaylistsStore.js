@@ -1,5 +1,5 @@
 // @flow
-import { action } from 'mobx';
+import { action, computed } from 'mobx';
 
 import { SpotifyModel } from '../../models';
 import type { Playlist, Song } from '../../types';
@@ -15,6 +15,10 @@ export default class PlaylistsStore {
     this.model = model;
 
     this.fetchPlaylists();
+  }
+
+  @computed get playlists() {
+    return this.model.playlists;
   }
 
   @action fetchPlaylists = () => {
@@ -51,5 +55,32 @@ export default class PlaylistsStore {
     playlist.songs.push(songId);
 
     this.playlistsApi.addToPlaylist(id, playlist);
+  };
+
+  @action addPlaylist = (name: $PropertyType<Playlist, 'name'>) => {
+    let id = 'PID-1';
+    if (this.model.playlists && this.model.playlists.length > 0) {
+      const nextIDNumber =
+        Number(
+          this.model.playlists[this.model.playlists.length - 1].id.replace(
+            /\w+-/,
+            '',
+          ),
+        ) + 1;
+      id = `PID-${nextIDNumber}`;
+    }
+
+    const playlist: Playlist = {
+      id,
+      name,
+      songs: [],
+    };
+
+    this.playlistsApi.addPlaylist(playlist);
+    if (this.model.playlists) {
+      this.model.playlists.push(playlist);
+    } else {
+      this.model.playlists = [playlist];
+    }
   };
 }
