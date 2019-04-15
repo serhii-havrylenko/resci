@@ -7,7 +7,7 @@ import { inject, observer } from 'mobx-react';
 
 import { ROUTES } from '../../constants';
 import Layout from '../Layout';
-import { FAQ, NotFound, Songs, Playlists } from '../Pages';
+import { FAQ, NotFound, Songs, Playlists, PlaylistsAdd } from '../Pages';
 
 type RoutesProps = {
   routing?: { location?: Location },
@@ -37,6 +37,7 @@ class Routes extends React.Component<RoutesProps> {
           <Route path={ROUTES.FAQ} component={FAQ} />
           <Route path="*" component={NotFound} />
         </Switch>
+        <Route path={ROUTES.PLAYLISTS_ADD} component={PlaylistsAdd} />
       </Layout>
     );
   }

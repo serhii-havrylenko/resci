@@ -1,6 +1,3 @@
-import SongsStore from './SongsStore';
-import SongsApi from './SongsApi';
-
-const store = new SongsStore(new SongsApi());
-
-export { SongsStore, SongsApi, store };
+// @flow
+export { default as SongsStore } from './SongsStore';
+export { default as SongsApi } from './SongsApi';

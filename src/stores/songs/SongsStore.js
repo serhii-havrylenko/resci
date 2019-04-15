@@ -1,16 +1,34 @@
 // @flow
-import { observable, action } from 'mobx';
+import { action, computed } from 'mobx';
+import { createTransformer } from 'mobx-utils';
 
-import { ISongsApi } from '../types';
+import { SpotifyModel } from '../../models';
+import { type Song } from '../../types';
+import { type ISongsApi } from '../types';
 
 export default class SongsStore {
-  @observable songs = [];
-
   songsApi: ISongsApi;
 
-  constructor(songsApi: ISongsApi) {
+  model: SpotifyModel;
+
+  constructor(songsApi: ISongsApi, model: SpotifyModel) {
     this.songsApi = songsApi;
+    this.model = model;
   }
+
+  @computed get songs() {
+    return this.model.songs;
+  }
+
+  getPlaylistsForSong = createTransformer((id: $PropertyType<Song, 'id'>) => {
+    if (!this.model.playlists) {
+      return [];
+    }
+
+    return this.model.playlists.filter(
+      ({ songs }) => !songs.find(songId => id === songId),
+    );
+  });
 
   @action fetchSongs = async () => {
     this.songsApi
@@ -23,7 +41,7 @@ export default class SongsStore {
     return response.json();
   };
 
-  @action onFetchResults = (response: Response) => {
-    this.songs = response;
+  @action onFetchResults = (songs: Song[]) => {
+    this.model.songs = songs;
   };
 }

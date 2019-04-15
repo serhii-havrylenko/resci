@@ -13,11 +13,20 @@
       "duration": 3.58
     },
     {
-      "id": "id-2",
+      "id": "id-3",
       "title": "Like Sand",
       "author": "In Flames",
       "duration": 4.42
     }
   ],
-  "playlists": []
+  "playlists": [
+    {
+      "id": "p-1",
+      "name": "playlist 1",
+      "songs": [
+        "id-3",
+        "id-2"
+      ]
+    }
+  ]
 }

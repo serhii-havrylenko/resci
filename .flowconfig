@@ -1,5 +1,7 @@
 [ignore]
 <PROJECT_ROOT>/node_modules/react-select/*
+<PROJECT_ROOT>/node_modules/jss/*
+<PROJECT_ROOT>/node_modules/@emotion/*
 
 [include]
 src/.*

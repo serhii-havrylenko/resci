@@ -1,5 +1,6 @@
 // @flow
 
+import { withStyles } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
@@ -10,14 +11,21 @@ import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 import PlaylistAddCheckTwoTone from '@material-ui/icons/PlaylistAddCheckTwoTone';
+import { Link } from 'react-router-dom';
 import * as React from 'react';
 
-import { type Playlist } from '../../../types';
+import type { Playlist, Song } from '../../../types';
 
-type AddToPlaylistProps = {
-  playlists?: Array<Playlist>,
+export type AddToPlaylistProps = {
+  classes: Object,
+  songId: $PropertyType<Song, 'id'>,
+  playlists: Array<Playlist>,
+  onAddToPlaylist: (
+    id: $PropertyType<Playlist, 'id'>,
+    songId: $PropertyType<Song, 'id'>,
+  ) => void,
 };
-type AddToPlaylistState = {
+export type AddToPlaylistState = {
   open: boolean,
 };
 
@@ -33,22 +41,38 @@ class AddToPlaylist extends React.Component<
     this.setState(state => ({ open: !state.open }));
   };
 
-  handleClose = (event: SyntheticEvent<HTMLButtonElement>) => {
-    if (this.anchorEl && this.anchorEl.contains(event.target)) {
+  handleClose = (event?: SyntheticEvent<HTMLButtonElement>) => {
+    if (
+      this.anchorEl &&
+      event &&
+      event.target instanceof Node &&
+      this.anchorEl.contains(event.target)
+    ) {
       return;
     }
 
     this.setState({ open: false });
   };
 
-  handleAddToNewPlaylist = () => {
-    console.log('add to new');
+  handleAddToNewPlaylist = (songId: $PropertyType<Song, 'id'>) => () => {
+    console.log('add to new', songId);
+    this.handleClose();
+  };
+
+  handleAddPlaylist = (
+    id: $PropertyType<Playlist, 'id'>,
+    songId: $PropertyType<Song, 'id'>,
+  ) => () => {
+    const { onAddToPlaylist } = this.props;
+
+    onAddToPlaylist(id, songId);
+    this.handleClose();
   };
 
   anchorEl: ?HTMLButtonElement;
 
   render() {
-    const { playlists } = this.props;
+    const { classes, songId, playlists } = this.props;
     const { open } = this.state;
 
     return (
@@ -78,14 +102,19 @@ class AddToPlaylist extends React.Component<
                   <MenuList>
                     {playlists.map(({ id, name }) => {
                       return (
-                        <MenuItem key={id} onClick={this.handleClose}>
+                        <MenuItem
+                          key={id}
+                          onClick={this.handleAddPlaylist(id, songId)}
+                        >
                           {name}
                         </MenuItem>
                       );
                     })}
                     {playlists.length && <Divider />}
-                    <MenuItem onClick={this.handleAddToNewPlaylist}>
-                      <PlaylistAddCheckTwoTone /> new
+                    <MenuItem>
+                      <Link to="/playlists/add" className={classes.link}>
+                        <PlaylistAddCheckTwoTone /> new
+                      </Link>
                     </MenuItem>
                   </MenuList>
                 </ClickAwayListener>
@@ -97,9 +126,12 @@ class AddToPlaylist extends React.Component<
     );
   }
 }
-
-AddToPlaylist.defaultProps = {
-  playlists: [],
-};
-
-export default AddToPlaylist;
+export default withStyles(() => ({
+  link: {
+    textDecoration: 'none',
+    display: 'flex',
+    '&:visited': {
+      color: 'inherit',
+    },
+  },
+}))(AddToPlaylist);

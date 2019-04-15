@@ -10,4 +10,5 @@ export type Song = {
 export type Playlist = {
   id: string,
   name: string,
+  songs: Array<$PropertyType<Song, 'id'>>,
 };

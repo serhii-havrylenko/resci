@@ -9,7 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 import * as React from 'react';
 
 import TableCellStyled from './TableCellStyled';
-import AddToPlaylist from './AddToPlaylist';
+import { AddToPlaylistContainer } from './AddToPlaylist';
 import { type Song } from '../../types';
 
 type SongsTableProps = {
@@ -37,7 +37,7 @@ const SongsTable = ({ classes, songs }: SongsTableProps) => (
             <TableCellStyled align="left">{song.author}</TableCellStyled>
             <TableCellStyled align="left">{song.duration}</TableCellStyled>
             <TableCellStyled align="center">
-              <AddToPlaylist />
+              <AddToPlaylistContainer songId={song.id} />
             </TableCellStyled>
           </TableRow>
         ))}
