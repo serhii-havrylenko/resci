@@ -1,6 +1,7 @@
 // @flow
 
 import { withStyles } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -20,39 +21,48 @@ type PlaylistsTableProps = {
 };
 
 const PlaylistsTable = ({ classes, playlists }: PlaylistsTableProps) => (
-  <Paper className={classes.root}>
-    <Table>
-      <TableHead>
-        <TableRow>
-          <TableCellStyled align="left">Name</TableCellStyled>
-          <TableCellStyled align="left">Details</TableCellStyled>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {playlists.map(playlist => {
-          const detailsUrl = ROUTES.PLAYLISTS_DETAILS.replace(
-            ':id',
-            playlist.id,
-          );
-          return (
-            <TableRow className={classes.row} key={playlist.id}>
-              <TableCellStyled align="left">{playlist.name}</TableCellStyled>
-              <TableCellStyled align="left">
-                <Link to={detailsUrl} className={classes.link}>
-                  <DetailsIcon /> new
-                </Link>
-              </TableCellStyled>
-            </TableRow>
-          );
-        })}
-        {!playlists.length && (
+  <div>
+    <div className={classes.controls}>
+      <Button>
+        <Link to={ROUTES.PLAYLISTS_ADD} className={classes.link}>
+          Create new
+        </Link>
+      </Button>
+    </div>
+    <Paper className={classes.root}>
+      <Table>
+        <TableHead>
           <TableRow>
-            <TableCellStyled>No data to show for now</TableCellStyled>
+            <TableCellStyled align="left">Name</TableCellStyled>
+            <TableCellStyled align="left">Details</TableCellStyled>
           </TableRow>
-        )}
-      </TableBody>
-    </Table>
-  </Paper>
+        </TableHead>
+        <TableBody>
+          {playlists.map(playlist => {
+            const detailsUrl = ROUTES.PLAYLISTS_DETAILS.replace(
+              ':id',
+              playlist.id,
+            );
+            return (
+              <TableRow className={classes.row} key={playlist.id}>
+                <TableCellStyled align="left">{playlist.name}</TableCellStyled>
+                <TableCellStyled align="left">
+                  <Link to={detailsUrl} className={classes.link}>
+                    <DetailsIcon /> Show songs
+                  </Link>
+                </TableCellStyled>
+              </TableRow>
+            );
+          })}
+          {!playlists.length && (
+            <TableRow>
+              <TableCellStyled>No data to show for now</TableCellStyled>
+            </TableRow>
+          )}
+        </TableBody>
+      </Table>
+    </Paper>
+  </div>
 );
 
 export default withStyles(theme => ({
@@ -75,5 +85,9 @@ export default withStyles(theme => ({
     '&:visited': {
       color: 'inherit',
     },
+  },
+  controls: {
+    display: 'flex',
+    justifyContent: 'flex-end',
   },
 }))(PlaylistsTable);

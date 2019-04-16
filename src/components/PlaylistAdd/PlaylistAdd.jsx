@@ -45,6 +45,8 @@ class PlaylistAdd extends React.Component<PlaylistAddProps, PlaylistAddState> {
       return;
     }
 
+    this.setState({ nameError: false });
+
     onCreateClick(value);
 
     onDialogClose();

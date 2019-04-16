@@ -1,26 +1,18 @@
 // @flow
-import { Location } from 'history';
 import React from 'react';
-import { inject, observer } from 'mobx-react';
-import { get, replace } from 'lodash';
+import { inject } from 'mobx-react';
+import { type Match } from 'react-router';
 
 import { PlaylistSongsContainer } from '../../PlaylistSongs';
 import { SongsStore } from '../../../stores/songs';
-import { ROUTES } from '../../../constants';
 
 type PlaylistDetailsProps = {
   // eslint-disable-next-line react/require-default-props
-  routing?: { location?: Location },
+  match: Match,
   songs: SongsStore,
 };
 
-const getPlaylistIDFromLocation = (location: Location) => {
-  return replace(location.pathname, `${ROUTES.PLAYLISTS}/`, '');
-};
-
 @inject('songs')
-@inject('routing')
-@observer
 class PlaylistDetails extends React.Component<PlaylistDetailsProps> {
   componentWillMount() {
     const { songs } = this.props;
@@ -29,7 +21,15 @@ class PlaylistDetails extends React.Component<PlaylistDetailsProps> {
   }
 
   render() {
-    const id = getPlaylistIDFromLocation(get(this.props, 'location'));
+    const {
+      match: {
+        params: { id },
+      },
+    } = this.props;
+
+    if (!id) {
+      return <div>Nothing to show</div>;
+    }
 
     return <PlaylistSongsContainer id={id} />;
   }

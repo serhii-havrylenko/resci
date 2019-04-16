@@ -14,26 +14,45 @@
     },
     {
       "id": "id-3",
-      "title": "Like Sand",
+      "title": "Another song",
       "author": "In Flames",
       "duration": 4.42
+    },
+    {
+      "id": "id-4",
+      "title": "Like Sand",
+      "author": "In Flames",
+      "duration": 6.42
+    },
+    {
+      "id": "id-5",
+      "title": "Another song",
+      "author": "In Flames",
+      "duration": 4.12
+    },
+    {
+      "id": "id-6",
+      "title": "Yet Another song",
+      "author": "In Flames",
+      "duration": 3.42
+    },
+    {
+      "id": "id-7",
+      "title": "Another song song",
+      "author": "Another author",
+      "duration": 2.42
     }
   ],
   "playlists": [
     {
       "id": "PID-1",
-      "name": "123",
-      "songs": [
-        "id-1",
-        "id-3"
-      ]
+      "name": "Playlist 1",
+      "songs": ["id-1"]
     },
     {
       "id": "PID-2",
-      "name": "14324",
-      "songs": [
-        "id-1"
-      ]
+      "name": "Playlist 2",
+      "songs": ["id-3"]
     }
   ]
 }

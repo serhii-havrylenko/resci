@@ -40,12 +40,12 @@ class Routes extends React.Component<RoutesProps> {
         <Switch location={location}>
           <Route exact path="/" component={Songs} />
           <Route path={ROUTES.SONGS} component={Songs} />
-          <Route path={ROUTES.PLAYLISTS_DETAILS} component={PlaylistDetails} />
           <Route path={ROUTES.PLAYLISTS} component={Playlists} />
+          <Route path={ROUTES.PLAYLISTS_DETAILS} component={PlaylistDetails} />
           <Route path={ROUTES.FAQ} component={FAQ} />
           <Route path="*" component={NotFound} />
         </Switch>
-        <Route path={ROUTES.PLAYLISTS_ADD} component={PlaylistsAdd} />
+        <Route exact path={ROUTES.PLAYLISTS_ADD} component={PlaylistsAdd} />
       </Layout>
     );
   }

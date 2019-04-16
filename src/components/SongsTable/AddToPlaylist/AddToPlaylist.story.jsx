@@ -1,5 +1,9 @@
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import { text } from '@storybook/addon-knobs';
 import * as React from 'react';
+import { Router } from 'react-router';
+import { createBrowserHistory } from 'history';
 
 import AddToPlaylist from './AddToPlaylist';
 
@@ -9,5 +13,11 @@ const playlists = [
 ];
 
 storiesOf('AddToPlaylist', module).add('default', () => (
-  <AddToPlaylist playlists={playlists} />
+  <Router history={createBrowserHistory()}>
+    <AddToPlaylist
+      playlists={playlists}
+      songId={text('Song id', '123')}
+      onAddToPlaylist={action('addClicked')}
+    />
+  </Router>
 ));
