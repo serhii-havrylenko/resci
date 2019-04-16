@@ -1,0 +1,1637 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SongsTable /> tests should match snapshot with add button 1`] = `
+<WithStyles(SongsTable)
+  songs={
+    Array [
+      Object {
+        "author": "In Flames",
+        "duration": 3.41,
+        "id": "id-1",
+        "title": "I, the Mask",
+      },
+      Object {
+        "author": "In Flames",
+        "duration": 3.58,
+        "id": "id-2",
+        "title": "The End",
+      },
+    ]
+  }
+>
+  <SongsTable
+    classes={
+      Object {
+        "actionsCell": "SongsTable-actionsCell-3",
+        "root": "SongsTable-root-1",
+        "row": "SongsTable-row-2",
+      }
+    }
+    hideActions={false}
+    songs={
+      Array [
+        Object {
+          "author": "In Flames",
+          "duration": 3.41,
+          "id": "id-1",
+          "title": "I, the Mask",
+        },
+        Object {
+          "author": "In Flames",
+          "duration": 3.58,
+          "id": "id-2",
+          "title": "The End",
+        },
+      ]
+    }
+  >
+    <WithStyles(Paper)
+      className="SongsTable-root-1"
+    >
+      <Paper
+        className="SongsTable-root-1"
+        classes={
+          Object {
+            "elevation0": "MuiPaper-elevation0-6",
+            "elevation1": "MuiPaper-elevation1-7",
+            "elevation10": "MuiPaper-elevation10-16",
+            "elevation11": "MuiPaper-elevation11-17",
+            "elevation12": "MuiPaper-elevation12-18",
+            "elevation13": "MuiPaper-elevation13-19",
+            "elevation14": "MuiPaper-elevation14-20",
+            "elevation15": "MuiPaper-elevation15-21",
+            "elevation16": "MuiPaper-elevation16-22",
+            "elevation17": "MuiPaper-elevation17-23",
+            "elevation18": "MuiPaper-elevation18-24",
+            "elevation19": "MuiPaper-elevation19-25",
+            "elevation2": "MuiPaper-elevation2-8",
+            "elevation20": "MuiPaper-elevation20-26",
+            "elevation21": "MuiPaper-elevation21-27",
+            "elevation22": "MuiPaper-elevation22-28",
+            "elevation23": "MuiPaper-elevation23-29",
+            "elevation24": "MuiPaper-elevation24-30",
+            "elevation3": "MuiPaper-elevation3-9",
+            "elevation4": "MuiPaper-elevation4-10",
+            "elevation5": "MuiPaper-elevation5-11",
+            "elevation6": "MuiPaper-elevation6-12",
+            "elevation7": "MuiPaper-elevation7-13",
+            "elevation8": "MuiPaper-elevation8-14",
+            "elevation9": "MuiPaper-elevation9-15",
+            "root": "MuiPaper-root-4",
+            "rounded": "MuiPaper-rounded-5",
+          }
+        }
+        component="div"
+        elevation={2}
+        square={false}
+      >
+        <div
+          className="MuiPaper-root-4 MuiPaper-elevation2-8 MuiPaper-rounded-5 SongsTable-root-1"
+        >
+          <WithStyles(Table)>
+            <Table
+              classes={
+                Object {
+                  "root": "MuiTable-root-31",
+                }
+              }
+              component="table"
+              padding="default"
+            >
+              <table
+                className="MuiTable-root-31"
+              >
+                <WithStyles(TableHead)>
+                  <TableHead
+                    classes={
+                      Object {
+                        "root": "MuiTableHead-root-32",
+                      }
+                    }
+                    component="thead"
+                  >
+                    <thead
+                      className="MuiTableHead-root-32"
+                    >
+                      <WithStyles(TableRow)>
+                        <TableRow
+                          classes={
+                            Object {
+                              "footer": "MuiTableRow-footer-37",
+                              "head": "MuiTableRow-head-36",
+                              "hover": "MuiTableRow-hover-35",
+                              "root": "MuiTableRow-root-33",
+                              "selected": "MuiTableRow-selected-34",
+                            }
+                          }
+                          component="tr"
+                          hover={false}
+                          selected={false}
+                        >
+                          <tr
+                            className="MuiTableRow-root-33 MuiTableRow-head-36"
+                          >
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignLeft-48"
+                                    scope="col"
+                                  >
+                                    Title
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignLeft-48"
+                                    scope="col"
+                                  >
+                                    Author
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignLeft-48"
+                                    scope="col"
+                                  >
+                                    Duratipn
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="center"
+                              className="SongsTable-actionsCell-3"
+                            >
+                              <WithStyles(TableCell)
+                                align="center"
+                                className="SongsTable-actionsCell-3"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="center"
+                                  className="SongsTable-actionsCell-3"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignCenter-49 SongsTable-actionsCell-3"
+                                    scope="col"
+                                  >
+                                    Actions
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                          </tr>
+                        </TableRow>
+                      </WithStyles(TableRow)>
+                    </thead>
+                  </TableHead>
+                </WithStyles(TableHead)>
+                <WithStyles(TableBody)>
+                  <TableBody
+                    classes={
+                      Object {
+                        "root": "MuiTableBody-root-52",
+                      }
+                    }
+                    component="tbody"
+                  >
+                    <tbody
+                      className="MuiTableBody-root-52"
+                    >
+                      <WithStyles(TableRow)
+                        className="SongsTable-row-2"
+                        key="id-1"
+                      >
+                        <TableRow
+                          className="SongsTable-row-2"
+                          classes={
+                            Object {
+                              "footer": "MuiTableRow-footer-37",
+                              "head": "MuiTableRow-head-36",
+                              "hover": "MuiTableRow-hover-35",
+                              "root": "MuiTableRow-root-33",
+                              "selected": "MuiTableRow-selected-34",
+                            }
+                          }
+                          component="tr"
+                          hover={false}
+                          selected={false}
+                        >
+                          <tr
+                            className="MuiTableRow-root-33 SongsTable-row-2"
+                          >
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    I, the Mask
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    In Flames
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    3.41
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="center"
+                            >
+                              <WithStyles(TableCell)
+                                align="center"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="center"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignCenter-49"
+                                  >
+                                    <inject-_class-with-songs-playlists
+                                      songId="id-1"
+                                    />
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                          </tr>
+                        </TableRow>
+                      </WithStyles(TableRow)>
+                      <WithStyles(TableRow)
+                        className="SongsTable-row-2"
+                        key="id-2"
+                      >
+                        <TableRow
+                          className="SongsTable-row-2"
+                          classes={
+                            Object {
+                              "footer": "MuiTableRow-footer-37",
+                              "head": "MuiTableRow-head-36",
+                              "hover": "MuiTableRow-hover-35",
+                              "root": "MuiTableRow-root-33",
+                              "selected": "MuiTableRow-selected-34",
+                            }
+                          }
+                          component="tr"
+                          hover={false}
+                          selected={false}
+                        >
+                          <tr
+                            className="MuiTableRow-root-33 SongsTable-row-2"
+                          >
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    The End
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    In Flames
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    3.58
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="center"
+                            >
+                              <WithStyles(TableCell)
+                                align="center"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="center"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignCenter-49"
+                                  >
+                                    <inject-_class-with-songs-playlists
+                                      songId="id-2"
+                                    />
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                          </tr>
+                        </TableRow>
+                      </WithStyles(TableRow)>
+                    </tbody>
+                  </TableBody>
+                </WithStyles(TableBody)>
+              </table>
+            </Table>
+          </WithStyles(Table)>
+        </div>
+      </Paper>
+    </WithStyles(Paper)>
+  </SongsTable>
+</WithStyles(SongsTable)>
+`;
+
+exports[`<SongsTable /> tests should match snapshot with hidden actions 1`] = `
+<WithStyles(SongsTable)
+  hideActions={true}
+  songs={
+    Array [
+      Object {
+        "author": "In Flames",
+        "duration": 3.41,
+        "id": "id-1",
+        "title": "I, the Mask",
+      },
+      Object {
+        "author": "In Flames",
+        "duration": 3.58,
+        "id": "id-2",
+        "title": "The End",
+      },
+    ]
+  }
+>
+  <SongsTable
+    classes={
+      Object {
+        "actionsCell": "SongsTable-actionsCell-3",
+        "root": "SongsTable-root-1",
+        "row": "SongsTable-row-2",
+      }
+    }
+    hideActions={true}
+    songs={
+      Array [
+        Object {
+          "author": "In Flames",
+          "duration": 3.41,
+          "id": "id-1",
+          "title": "I, the Mask",
+        },
+        Object {
+          "author": "In Flames",
+          "duration": 3.58,
+          "id": "id-2",
+          "title": "The End",
+        },
+      ]
+    }
+  >
+    <WithStyles(Paper)
+      className="SongsTable-root-1"
+    >
+      <Paper
+        className="SongsTable-root-1"
+        classes={
+          Object {
+            "elevation0": "MuiPaper-elevation0-6",
+            "elevation1": "MuiPaper-elevation1-7",
+            "elevation10": "MuiPaper-elevation10-16",
+            "elevation11": "MuiPaper-elevation11-17",
+            "elevation12": "MuiPaper-elevation12-18",
+            "elevation13": "MuiPaper-elevation13-19",
+            "elevation14": "MuiPaper-elevation14-20",
+            "elevation15": "MuiPaper-elevation15-21",
+            "elevation16": "MuiPaper-elevation16-22",
+            "elevation17": "MuiPaper-elevation17-23",
+            "elevation18": "MuiPaper-elevation18-24",
+            "elevation19": "MuiPaper-elevation19-25",
+            "elevation2": "MuiPaper-elevation2-8",
+            "elevation20": "MuiPaper-elevation20-26",
+            "elevation21": "MuiPaper-elevation21-27",
+            "elevation22": "MuiPaper-elevation22-28",
+            "elevation23": "MuiPaper-elevation23-29",
+            "elevation24": "MuiPaper-elevation24-30",
+            "elevation3": "MuiPaper-elevation3-9",
+            "elevation4": "MuiPaper-elevation4-10",
+            "elevation5": "MuiPaper-elevation5-11",
+            "elevation6": "MuiPaper-elevation6-12",
+            "elevation7": "MuiPaper-elevation7-13",
+            "elevation8": "MuiPaper-elevation8-14",
+            "elevation9": "MuiPaper-elevation9-15",
+            "root": "MuiPaper-root-4",
+            "rounded": "MuiPaper-rounded-5",
+          }
+        }
+        component="div"
+        elevation={2}
+        square={false}
+      >
+        <div
+          className="MuiPaper-root-4 MuiPaper-elevation2-8 MuiPaper-rounded-5 SongsTable-root-1"
+        >
+          <WithStyles(Table)>
+            <Table
+              classes={
+                Object {
+                  "root": "MuiTable-root-31",
+                }
+              }
+              component="table"
+              padding="default"
+            >
+              <table
+                className="MuiTable-root-31"
+              >
+                <WithStyles(TableHead)>
+                  <TableHead
+                    classes={
+                      Object {
+                        "root": "MuiTableHead-root-32",
+                      }
+                    }
+                    component="thead"
+                  >
+                    <thead
+                      className="MuiTableHead-root-32"
+                    >
+                      <WithStyles(TableRow)>
+                        <TableRow
+                          classes={
+                            Object {
+                              "footer": "MuiTableRow-footer-37",
+                              "head": "MuiTableRow-head-36",
+                              "hover": "MuiTableRow-hover-35",
+                              "root": "MuiTableRow-root-33",
+                              "selected": "MuiTableRow-selected-34",
+                            }
+                          }
+                          component="tr"
+                          hover={false}
+                          selected={false}
+                        >
+                          <tr
+                            className="MuiTableRow-root-33 MuiTableRow-head-36"
+                          >
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignLeft-48"
+                                    scope="col"
+                                  >
+                                    Title
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignLeft-48"
+                                    scope="col"
+                                  >
+                                    Author
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignLeft-48"
+                                    scope="col"
+                                  >
+                                    Duratipn
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                          </tr>
+                        </TableRow>
+                      </WithStyles(TableRow)>
+                    </thead>
+                  </TableHead>
+                </WithStyles(TableHead)>
+                <WithStyles(TableBody)>
+                  <TableBody
+                    classes={
+                      Object {
+                        "root": "MuiTableBody-root-52",
+                      }
+                    }
+                    component="tbody"
+                  >
+                    <tbody
+                      className="MuiTableBody-root-52"
+                    >
+                      <WithStyles(TableRow)
+                        className="SongsTable-row-2"
+                        key="id-1"
+                      >
+                        <TableRow
+                          className="SongsTable-row-2"
+                          classes={
+                            Object {
+                              "footer": "MuiTableRow-footer-37",
+                              "head": "MuiTableRow-head-36",
+                              "hover": "MuiTableRow-hover-35",
+                              "root": "MuiTableRow-root-33",
+                              "selected": "MuiTableRow-selected-34",
+                            }
+                          }
+                          component="tr"
+                          hover={false}
+                          selected={false}
+                        >
+                          <tr
+                            className="MuiTableRow-root-33 SongsTable-row-2"
+                          >
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    I, the Mask
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    In Flames
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    3.41
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                          </tr>
+                        </TableRow>
+                      </WithStyles(TableRow)>
+                      <WithStyles(TableRow)
+                        className="SongsTable-row-2"
+                        key="id-2"
+                      >
+                        <TableRow
+                          className="SongsTable-row-2"
+                          classes={
+                            Object {
+                              "footer": "MuiTableRow-footer-37",
+                              "head": "MuiTableRow-head-36",
+                              "hover": "MuiTableRow-hover-35",
+                              "root": "MuiTableRow-root-33",
+                              "selected": "MuiTableRow-selected-34",
+                            }
+                          }
+                          component="tr"
+                          hover={false}
+                          selected={false}
+                        >
+                          <tr
+                            className="MuiTableRow-root-33 SongsTable-row-2"
+                          >
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    The End
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    In Flames
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39 MuiTableCell-alignLeft-48"
+                                  >
+                                    3.58
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                          </tr>
+                        </TableRow>
+                      </WithStyles(TableRow)>
+                    </tbody>
+                  </TableBody>
+                </WithStyles(TableBody)>
+              </table>
+            </Table>
+          </WithStyles(Table)>
+        </div>
+      </Paper>
+    </WithStyles(Paper)>
+  </SongsTable>
+</WithStyles(SongsTable)>
+`;
+
+exports[`<SongsTable /> tests should not render any songs when no songs passed 1`] = `
+<WithStyles(SongsTable)
+  songs={Array []}
+>
+  <SongsTable
+    classes={
+      Object {
+        "actionsCell": "SongsTable-actionsCell-3",
+        "root": "SongsTable-root-1",
+        "row": "SongsTable-row-2",
+      }
+    }
+    hideActions={false}
+    songs={Array []}
+  >
+    <WithStyles(Paper)
+      className="SongsTable-root-1"
+    >
+      <Paper
+        className="SongsTable-root-1"
+        classes={
+          Object {
+            "elevation0": "MuiPaper-elevation0-6",
+            "elevation1": "MuiPaper-elevation1-7",
+            "elevation10": "MuiPaper-elevation10-16",
+            "elevation11": "MuiPaper-elevation11-17",
+            "elevation12": "MuiPaper-elevation12-18",
+            "elevation13": "MuiPaper-elevation13-19",
+            "elevation14": "MuiPaper-elevation14-20",
+            "elevation15": "MuiPaper-elevation15-21",
+            "elevation16": "MuiPaper-elevation16-22",
+            "elevation17": "MuiPaper-elevation17-23",
+            "elevation18": "MuiPaper-elevation18-24",
+            "elevation19": "MuiPaper-elevation19-25",
+            "elevation2": "MuiPaper-elevation2-8",
+            "elevation20": "MuiPaper-elevation20-26",
+            "elevation21": "MuiPaper-elevation21-27",
+            "elevation22": "MuiPaper-elevation22-28",
+            "elevation23": "MuiPaper-elevation23-29",
+            "elevation24": "MuiPaper-elevation24-30",
+            "elevation3": "MuiPaper-elevation3-9",
+            "elevation4": "MuiPaper-elevation4-10",
+            "elevation5": "MuiPaper-elevation5-11",
+            "elevation6": "MuiPaper-elevation6-12",
+            "elevation7": "MuiPaper-elevation7-13",
+            "elevation8": "MuiPaper-elevation8-14",
+            "elevation9": "MuiPaper-elevation9-15",
+            "root": "MuiPaper-root-4",
+            "rounded": "MuiPaper-rounded-5",
+          }
+        }
+        component="div"
+        elevation={2}
+        square={false}
+      >
+        <div
+          className="MuiPaper-root-4 MuiPaper-elevation2-8 MuiPaper-rounded-5 SongsTable-root-1"
+        >
+          <WithStyles(Table)>
+            <Table
+              classes={
+                Object {
+                  "root": "MuiTable-root-31",
+                }
+              }
+              component="table"
+              padding="default"
+            >
+              <table
+                className="MuiTable-root-31"
+              >
+                <WithStyles(TableHead)>
+                  <TableHead
+                    classes={
+                      Object {
+                        "root": "MuiTableHead-root-32",
+                      }
+                    }
+                    component="thead"
+                  >
+                    <thead
+                      className="MuiTableHead-root-32"
+                    >
+                      <WithStyles(TableRow)>
+                        <TableRow
+                          classes={
+                            Object {
+                              "footer": "MuiTableRow-footer-37",
+                              "head": "MuiTableRow-head-36",
+                              "hover": "MuiTableRow-hover-35",
+                              "root": "MuiTableRow-root-33",
+                              "selected": "MuiTableRow-selected-34",
+                            }
+                          }
+                          component="tr"
+                          hover={false}
+                          selected={false}
+                        >
+                          <tr
+                            className="MuiTableRow-root-33 MuiTableRow-head-36"
+                          >
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignLeft-48"
+                                    scope="col"
+                                  >
+                                    Title
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignLeft-48"
+                                    scope="col"
+                                  >
+                                    Author
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="left"
+                            >
+                              <WithStyles(TableCell)
+                                align="left"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="left"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignLeft-48"
+                                    scope="col"
+                                  >
+                                    Duratipn
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                            <WithStyles(WithStyles(TableCell))
+                              align="center"
+                              className="SongsTable-actionsCell-3"
+                            >
+                              <WithStyles(TableCell)
+                                align="center"
+                                className="SongsTable-actionsCell-3"
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="center"
+                                  className="SongsTable-actionsCell-3"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <th
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-head-41 WithStyles-TableCell--head-38 MuiTableCell-alignCenter-49 SongsTable-actionsCell-3"
+                                    scope="col"
+                                  >
+                                    Actions
+                                  </th>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                          </tr>
+                        </TableRow>
+                      </WithStyles(TableRow)>
+                    </thead>
+                  </TableHead>
+                </WithStyles(TableHead)>
+                <WithStyles(TableBody)>
+                  <TableBody
+                    classes={
+                      Object {
+                        "root": "MuiTableBody-root-52",
+                      }
+                    }
+                    component="tbody"
+                  >
+                    <tbody
+                      className="MuiTableBody-root-52"
+                    >
+                      <WithStyles(TableRow)>
+                        <TableRow
+                          classes={
+                            Object {
+                              "footer": "MuiTableRow-footer-37",
+                              "head": "MuiTableRow-head-36",
+                              "hover": "MuiTableRow-hover-35",
+                              "root": "MuiTableRow-root-33",
+                              "selected": "MuiTableRow-selected-34",
+                            }
+                          }
+                          component="tr"
+                          hover={false}
+                          selected={false}
+                        >
+                          <tr
+                            className="MuiTableRow-root-33"
+                          >
+                            <WithStyles(WithStyles(TableCell))>
+                              <WithStyles(TableCell)
+                                classes={
+                                  Object {
+                                    "body": "WithStyles-TableCell--body-39",
+                                    "head": "WithStyles-TableCell--head-38",
+                                  }
+                                }
+                              >
+                                <TableCell
+                                  align="inherit"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTableCell-alignCenter-49",
+                                      "alignJustify": "MuiTableCell-alignJustify-51",
+                                      "alignLeft": "MuiTableCell-alignLeft-48",
+                                      "alignRight": "MuiTableCell-alignRight-50",
+                                      "body": "MuiTableCell-body-42 WithStyles-TableCell--body-39",
+                                      "footer": "MuiTableCell-footer-43",
+                                      "head": "MuiTableCell-head-41 WithStyles-TableCell--head-38",
+                                      "numeric": "MuiTableCell-numeric-44",
+                                      "paddingCheckbox": "MuiTableCell-paddingCheckbox-46",
+                                      "paddingDense": "MuiTableCell-paddingDense-45",
+                                      "paddingNone": "MuiTableCell-paddingNone-47",
+                                      "root": "MuiTableCell-root-40",
+                                    }
+                                  }
+                                >
+                                  <td
+                                    aria-sort={null}
+                                    className="MuiTableCell-root-40 MuiTableCell-body-42 WithStyles-TableCell--body-39"
+                                  >
+                                    No data to show for now
+                                  </td>
+                                </TableCell>
+                              </WithStyles(TableCell)>
+                            </WithStyles(WithStyles(TableCell))>
+                          </tr>
+                        </TableRow>
+                      </WithStyles(TableRow)>
+                    </tbody>
+                  </TableBody>
+                </WithStyles(TableBody)>
+              </table>
+            </Table>
+          </WithStyles(Table)>
+        </div>
+      </Paper>
+    </WithStyles(Paper)>
+  </SongsTable>
+</WithStyles(SongsTable)>
+`;

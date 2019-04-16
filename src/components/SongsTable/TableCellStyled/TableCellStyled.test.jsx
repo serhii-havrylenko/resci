@@ -6,7 +6,7 @@ import TableCellStyled from './TableCellStyled';
 
 describe('<TableCellStyled /> tests', () => {
   test('should match snapshot for head cell', () => {
-    const tree = mount(
+    const wrapper = mount(
       <Table>
         <TableHead>
           <TableRow>
@@ -15,11 +15,11 @@ describe('<TableCellStyled /> tests', () => {
         </TableHead>
       </Table>,
     );
-    expect(tree).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   test('should match snapshot for body cell', () => {
-    const tree = mount(
+    const wrapper = mount(
       <Table>
         <TableBody>
           <TableRow>
@@ -28,6 +28,6 @@ describe('<TableCellStyled /> tests', () => {
         </TableBody>
       </Table>,
     );
-    expect(tree).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

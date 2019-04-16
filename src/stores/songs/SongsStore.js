@@ -51,7 +51,8 @@ export default class SongsStore {
     this.songsApi
       .fetchSongs()
       .then(this.onFetchSongsData)
-      .then(this.onFetchResults);
+      .then(this.onFetchResults)
+      .catch(console.log);
   };
 
   @action onFetchSongsData = (response: Response) => {

@@ -128,6 +128,7 @@ class AddToPlaylist extends React.Component<
     );
   }
 }
+
 export default withStyles(() => ({
   link: {
     textDecoration: 'none',
